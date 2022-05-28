@@ -795,6 +795,62 @@ transform: translateX(4px) translateY(4px);
   display: flex;
   
 }
+
+.pin-page{
+  
+width: 100%;
+  
+
+}
+
+.pin-header{
+  height: 100px;
+width: 100%;
+background-color: #fffefd;
+  background-image: url("./components/pin-header.png");
+}
+
+.back-pin img{
+width: 50px;
+height: 30px;
+padding:10px;
+
+}
+
+.pin-body{
+height: 600px;
+background-color: #fffefd;
+}
+
+.shop-page{
+  width: 100%;
+ 
+
+}
+
+.shop-header{
+  height: 140px;
+  width: 100%;
+  background-color: #fffefd;
+    background-image: url("./components/shop-header.png");
+    background-size: cover;
+
+}
+.back-shop img{
+  width: 50px;
+  height: 30px;
+  padding:10px;
+  
+  }
+
+.shop-body{
+  height: 600px;
+background-color: #fffefd;
+
+}
+
+
+
 @keyframes beat {
   0%,100%{
     transform: scale(1);

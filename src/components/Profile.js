@@ -4,7 +4,7 @@ import {motion} from "framer-motion";
 export default class Profile extends Component {
   render() {
     return (
-        <div class="profile-page">
+        <motion.div class="profile-page" initial={{}} animate={{}}>
         <div class="mathi">
             <div class="header">
             <img className="bck" src={require("./back.png")} alt="" onClick={()=> {window.location.pathname="/home" }} />
@@ -27,7 +27,7 @@ export default class Profile extends Component {
            <div class="main">
            Nepal-based Developer and Designer, born in 2003. Draws a humorous world view with keywords and character sets provided. he has a wide range of expression methods including sketches, coding, illustrator and editing. he has been working in various genres and media such as advertising, marketing, product design, programming and co-founded a company called LinkBinary which provides its services, both in Nepal and abroad.
            </div>
-    </div>
+    </motion.div>
     )
   }
 }
