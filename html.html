@@ -7,85 +7,99 @@
 </head>
 <body>
     <style>
-        .header{
+        .top-work{
             display: flex;
             width: 100%;
             height: 80px;
+            background-color: black;
             
         }
-        .left{
-            margin:0;
-            background-color: black;
-            width: 50%;
-            height: 80px;
-            border-bottom-left-radius:0px ;
-            border-top-right-radius: 0px;
-        }
-        .right{
-            margin:0;
-            background-color: black;
-            width: 50%;
-            height: 80px;
-            border-bottom-right-radius:0px ;
-            border-top-right-radius: 0px;
-            display: flex;
-        }
-        .hero{
-            display: flex;
+        .works-list{
+            height: 500px;
+            display: block;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            overflow-y: scroll !important;
             width: 100%;
-            height: 200px;
-            overflow: visible;
-            position: relative;
-            z-index: 2;
-            margin-top: -15px;
-        }
-        .one{
-            margin:0;
-            background-color: orange;
-            width: 60%;
-            height: 200px;
-            border-top-left-radius:0px ;
-            border-top-right-radius: 60px;
-        }
-        .two{
-            margin:0;
-            background-color: orange;
-            width: 60%;
-            height: 200px;
-            border-top-right-radius:0px ;
-            border-top-left-radius: 60px;
-        }
-        .mathi{
-            background-color: black;
-        }
-        .avtr{
-            width: 70px;
-            height: 70px;
-            background-color: white;
-            border-radius: 40px;
-            margin-left: 30px;
-            margin-right:auto ;
-            margin-top: -35px;
             
+
         }
-        .main{
-            width: 100%;
-            height: 300px;
-            background-color: bisque;
-        }
+        .works-list {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.works-list::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.work-container{
+    margin-top: 30px;
+}
+.divider{
+    background-color: black;
+    height: 3px;
+}
+.name-project{
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.image-project img{
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.like img{
+    margin-left: 10px;
+    width: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.description-project{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.visit-project{
+    margin-left: 10px;
+    height: 80px;
+    width: 100px;
+    background-color: orange;
+    color: white;
+    align-content: center;
+    justify-content: centre;
+}
+
+.work-page{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
     </style>
-<div class="profile-page">
-    <div class="mathi">
-        <div class="header">
-            <div class="left"></div>
-            <div class="right"></div>
+<div class="work-page">
+    
+        <div class="top-work">
+            
         </div>
-        <div class="hero">
-            <div class="one"><div class="avtr"></div></div>
-            <div class="two"></div>
+        <div class="works-list">
+            <div class="work-cotainer">
+                <div class="divider"></div>
+                <div class="name-project">Batuwa</div>
+                <div class="divider"></div>
+                <div class="image-project"><img src="./bg.png" alt=""></div>
+                <div class="divider"></div>
+                <div class="like"><img src="./cursor.png" alt=""></div>
+                <div class="description-project">E-commerce app comissioned to LinkBinary</div>
+                <div class="visit-project">visit</div>
+            </div>
+
+            
         </div>
-       </div>
-       <div class="main"></div>
-</div>
+       
+       
+      
 </body>
 </html>
