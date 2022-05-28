@@ -4,11 +4,11 @@ import {motion} from "framer-motion";
 export default class Profile extends Component {
   render() {
     return (
-        <motion.div class="profile-page" initial={{}} animate={{}}>
+        <motion.div class="profile-page" >
         <div class="mathi">
             <div class="header">
             <img className="bck" src={require("./back.png")} alt="" onClick={()=> {window.location.pathname="/home" }} />
-                <div className="circle"><img src={require("./profile-icon.png")} alt="" /></div>
+                <motion.div className="circle" initial={{scale:20}} animate={{scale:1}}><img src={require("./profile-icon.png")} alt="" /></motion.div>
                 <div class="left"></div>
                 <div class="right"></div>
             </div>

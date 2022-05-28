@@ -10,6 +10,7 @@ import Shop from './components/Shop';
 import { AnimatePresence } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Profileloader from './components/profile-loader';
 
 
 
@@ -29,6 +30,8 @@ export default function AnimatedRoutes() {
             <Route path="/tools" element={<Tools />} />
             <Route path="/pin" element={<Pin />} />
             <Route path="/shop" element={<Shop />} />
+            <Route path="/profileloader" element={<Profileloader/>} />
+            
 
 
 

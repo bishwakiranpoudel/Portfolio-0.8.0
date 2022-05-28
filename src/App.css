@@ -849,7 +849,10 @@ background-color: #fffefd;
 
 }
 
-
+a{
+  text-decoration: none;
+  border: none;
+}
 
 @keyframes beat {
   0%,100%{

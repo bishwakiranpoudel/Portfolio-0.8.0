@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {motion} from "framer-motion";
+import { Link } from "react-router-dom";
 
 
 
@@ -29,7 +30,7 @@ const min =  (new Date().getMinutes()<10?'0':'') + new Date().getMinutes();
        <div className="landing-body">
        <img className='gr' src={require("./GR.png")} alt="" />
         <img className='name' src={require("./name.png")}alt="" />
-       <div className="enter" onClick={()=> {window.location.pathname="/home" }}>
+      <Link to="/home"> <div className="enter" >
        <motion.ul initial={{opacity:1, y:0}}
     animate={{opacity:1, y:0}}
     exit={{opacity:1, y:-600}}
@@ -37,7 +38,7 @@ const min =  (new Date().getMinutes()<10?'0':'') + new Date().getMinutes();
             <motion.li className='entr'><span>Enter</span></motion.li>
             <motion.li><div className="land"></div></motion.li>
         </motion.ul>
-       </div>
+       </div></Link>
        </div>
     </motion.div>
   )
