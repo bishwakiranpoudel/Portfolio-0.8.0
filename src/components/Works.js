@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { motion } from 'framer-motion';
 
 export default class Works extends Component {
     myFunction= () => {
@@ -20,8 +21,21 @@ export default class Works extends Component {
   render() {
     
     return (
-        <div class="work-page">
-    
+        <motion.div class="work-page">
+           <motion.div initial={{display:'block',zIndex:1000}} animate={{zIndex:0,y:0,transitionEnd: {
+            display: "none",
+          },}} transition={{duration:1}}>
+            <div className="works" >
+            <motion.div className="work-box" initial={{scale:1,x:-80 }} animate={{scale:8, x:10,y:200}}transition={{duration:0.5}}>
+              <motion.img src={require("./works-icon.png")} alt="" animate={{scale:0.1, x:18}}transition={{duration:0.5}} />
+            </motion.div>
+            
+
+          </div>
+            </motion.div>
+            <motion.div initial={{display:"none",opacity:0}} animate={{opacity:1,transitionEnd: {
+            display: "block",
+          },}} transition={{duration:1}}>
         <div class="top-work">
         <img className="workbck" src={require("./back.png")} alt="" onClick={()=> {window.location.pathname="/home" }} />
             <div class="star"><img src={require("./works-icon.png")} alt="" /></div>
@@ -70,7 +84,7 @@ export default class Works extends Component {
             </div>
 
             
-        </div></div>
+        </div></motion.div></motion.div>
     )
   }
 }

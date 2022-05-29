@@ -227,22 +227,22 @@ width: 90px;
   background-color: #FF612F;
 }
 .work-box:hover{
-transform: scale(1.1);
+transform: scale(1.04);
 }
 .profile-box:hover{
-  transform: scale(1.1);
+  transform: scale(1.04);
   }
   .shop-box:hover{
-    transform: scale(1.1);
+    transform: scale(1.04);
     }
     .contact-box:hover{
-      transform: scale(1.1);
+      transform: scale(1.04);
       }
       .pin-box:hover{
-        transform: scale(1.1);
+        transform: scale(1.04);
         }
         .tool-box:hover{
-          transform: scale(1.1);
+          transform: scale(1.04);
           }
 
 .shop img{
@@ -327,13 +327,14 @@ transform: scale(1.1);
 
 .profile-page{
   width: 100%;
+  background-color: #3D3B39;
 }
 .header{
   display: flex;
   width: 100%;
   height: 138px;
   overflow: visible;
-  background-image: url("./components/headerbg.png");
+  background-color: transparent;
   background-size: cover;
 
   
@@ -390,6 +391,8 @@ transform: scale(1.1);
   
 }
 .mathi{
+  background-image: url("./components/headerbg.png");
+  background-size: contain;
   background-color: #F4DA27;
 }
 .avtr{
@@ -503,7 +506,9 @@ border-bottom: #3D3B39 solid 0px;
 .linked p{
   margin-left: 4px;
 }
-
+.work-page{
+  background-color: white;
+}
 .top-work{
   display: flex;
   width: 100%;
@@ -824,6 +829,7 @@ background-color: #fffefd;
 
 .shop-page{
   width: 100%;
+  background-color: white;
  
 
 }
@@ -852,8 +858,16 @@ background-color: #fffefd;
 a{
   text-decoration: none;
   border: none;
+ 
+}
+a:hover{
+  width: fit-content;
+  transform: scale(0.8);
 }
 
+.pin-page{
+  background-color: white;
+}
 @keyframes beat {
   0%,100%{
     transform: scale(1);

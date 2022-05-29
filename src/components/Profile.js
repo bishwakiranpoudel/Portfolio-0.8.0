@@ -5,10 +5,24 @@ export default class Profile extends Component {
   render() {
     return (
         <motion.div class="profile-page" >
-        <div class="mathi">
+            <motion.div initial={{display:'block',zIndex:1000}} animate={{zIndex:0,y:0,transitionEnd: {
+            display: "none",
+          },}} transition={{duration:1}}>
+            <div className="works" >
+            <motion.div className="profile-box" initial={{scale:1,x:-100 }} animate={{scale:8, x:10,y:200}}transition={{duration:0.5}}>
+              <motion.img src={require("./profile-icon.png")} alt="" animate={{scale:0.1, x:18}}transition={{duration:0.5}} />
+            </motion.div>
+            
+
+          </div>
+            </motion.div>
+       <motion.div initial={{display:"none"}} animate={{opacity:1,transitionEnd: {
+            display: "block",
+          },}} transition={{duration:1}}>
+       <div class="mathi">
             <div class="header">
             <img className="bck" src={require("./back.png")} alt="" onClick={()=> {window.location.pathname="/home" }} />
-                <motion.div className="circle" initial={{scale:20}} animate={{scale:1}}><img src={require("./profile-icon.png")} alt="" /></motion.div>
+                <motion.div className="circle" ><img src={require("./profile-icon.png")} alt="" /></motion.div>
                 <div class="left"></div>
                 <div class="right"></div>
             </div>
@@ -27,6 +41,7 @@ export default class Profile extends Component {
            <div class="main">
            Nepal-based Developer and Designer, born in 2003. Draws a humorous world view with keywords and character sets provided. he has a wide range of expression methods including sketches, coding, illustrator and editing. he has been working in various genres and media such as advertising, marketing, product design, programming and co-founded a company called LinkBinary which provides its services, both in Nepal and abroad.
            </div>
+       </motion.div>
     </motion.div>
     )
   }
