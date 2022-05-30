@@ -34,6 +34,14 @@ body{
   
 }
 
+/* .border-screen{
+  width:440px;
+  height:640px;
+  border-radius: 50px;
+  background: linear-gradient(to right, #3D3B39 50%, #93B075 50%);;
+  justify-content: center;
+  margin-left: 4px;
+} */
 .screen{
  
 width: 400px;
@@ -41,7 +49,7 @@ height: 600px;
 
 background-image: url("./back-png.png");
 background-size: cover;
-
+/* margin: 20px; */
 border: 20px solid #3D3B39;
 border-radius: 50px;
 overflow: hidden;

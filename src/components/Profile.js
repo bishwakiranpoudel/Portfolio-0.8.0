@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {motion} from "framer-motion";
+import { Link } from 'react-router-dom';
 
 export default class Profile extends Component {
   render() {
@@ -21,7 +22,7 @@ export default class Profile extends Component {
           },}} transition={{duration:1}}>
        <div class="mathi">
             <div class="header">
-            <img className="bck" src={require("./back.png")} alt="" onClick={()=> {window.location.pathname="/home" }} />
+            <Link to={'/home'}><img className="bck" src={require("./back.png")} alt=""  /></Link>
                 <motion.div className="circle" ><img src={require("./profile-icon.png")} alt="" /></motion.div>
                 <div class="left"></div>
                 <div class="right"></div>

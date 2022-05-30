@@ -11,13 +11,15 @@ function App() {
   return (
     <div className="App">
       
-      <div className="screen">
+     <div className="border-screen">
+     <div className="screen">
         <Router>
           
             <AnimatedRoutes/>
          
         </Router>
       </div>
+     </div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 export default class Contact extends Component {
   render() {
@@ -21,7 +22,7 @@ export default class Contact extends Component {
           },}} transition={{duration:1}}>
           <motion.div>
           <div className="contact-top">
-              <div className="oval"><div className="back-contact"><img  src={require("./back.png")} alt="" onClick={()=> {window.location.pathname="/home" }} /></div><div className="dance-contact"><img src={require("./contact-icon.png")} alt="" /></div></div>
+              <div className="oval"><div className="back-contact"><Link to={"/home"}><img  src={require("./back.png")} alt=""/></Link></div><div className="dance-contact"><img src={require("./contact-icon.png")} alt="" /></div></div>
           </div>
           <div className="contact-body">
           <form>

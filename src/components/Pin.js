@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 export default class Pin extends Component {
   render() {
@@ -19,7 +20,7 @@ export default class Pin extends Component {
             <motion.div initial={{display:"none"}} animate={{opacity:1,transitionEnd: {
             display: "block",
           },}} transition={{duration:1}}>
-         <div className="pin-header"><div className="back-pin"><img  src={require("./back.png")} alt="" onClick={()=> {window.location.pathname="/home" }} /></div></div>
+         <div className="pin-header"><div className="back-pin"><Link to={"/home"}><img  src={require("./back.png")} alt=""  /></Link></div></div>
          <div className="pin-body"></div>
          </motion.div>
      </motion.div>

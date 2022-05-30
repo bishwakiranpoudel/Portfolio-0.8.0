@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 export default class Tools extends Component {
   render() {
@@ -19,7 +20,7 @@ export default class Tools extends Component {
             <motion.div initial={{display:"none"}} animate={{opacity:1,transitionEnd: {
             display: "block",
           },}} transition={{duration:1}}>
-          <div className="tools-header"><div className="back-contact"><img  src={require("./back.png")} alt="" onClick={()=> {window.location.pathname="/home" }} /></div></div>
+          <div className="tools-header"><div className="back-contact"><Link to={"/home"}><img  src={require("./back.png")} alt=""  /></Link></div></div>
           <div className="tools-body"></div>
           </motion.div>
       </motion.div>

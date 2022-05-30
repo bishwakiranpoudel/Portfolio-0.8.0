@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { motion } from 'framer-motion';
-
+import { Link } from 'react-router-dom';
 export default class Works extends Component {
     myFunction= () => {
         const element = document.getElementById("like-btn1");
@@ -37,7 +37,7 @@ export default class Works extends Component {
             display: "block",
           },}} transition={{duration:1}}>
         <div class="top-work">
-        <img className="workbck" src={require("./back.png")} alt="" onClick={()=> {window.location.pathname="/home" }} />
+        <Link to={"/home"}><img className="workbck" src={require("./back.png")} alt=""  /></Link>
             <div class="star"><img src={require("./works-icon.png")} alt="" /></div>
             
         </div>
