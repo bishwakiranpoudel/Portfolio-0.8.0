@@ -27,11 +27,16 @@ export default class Contact extends Component {
           <div className="contact-body">
           <form>
           <div className="divider"></div>
-          <div className="input">from: <input type="text" name="from"  /></div>
+          <div className="input">FROM: <input type="email" name="email"  /></div>
           <div className="divider"></div>
-          <div className="input">email: <input type="email" name="email"  /></div>
+          <div className="input">NAME: <input type="text" name="from"  /></div>
           <div className="divider"></div>
-          <div className="textarea">message: <textarea name="message"  ></textarea></div>
+          
+          
+          
+          <div className="input">SUB: <input type="text" name="sub"  /></div>
+          <div className="divider"></div>
+          <div className="textarea">MESSAGE: <textarea name="message"  ></textarea></div>
           <div className="send-btn">
               <button type="submit"><img src={require("./send.png")} alt="" /></button>
           </div>
