@@ -16,7 +16,7 @@ export default function Home() {
       opacity: 1, x: 0,
       transition: {
 
-        staggerChildren: 1.5,
+        staggerChildren: 0.6,
 
       }
     }
@@ -31,7 +31,7 @@ export default function Home() {
       opacity: 1, x: 0,
       transition: {
 
-        staggerChildren: 0.5,
+        staggerChildren: 0.2,
         type: "spring"
       }
     }
