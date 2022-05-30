@@ -1,9 +1,24 @@
 import React, { Component } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import emailjs from 'emailjs-com';
+import { useRef } from 'react';
 
-export default class Contact extends Component {
-  render() {
+
+
+export default function 
+Contact() {
+  const form = useRef();
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_fskzm77', 'template_e2k2iqc', form.current, '8OWrzZIXn37y-q8u9')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
     return (
       <motion.div className="contact-page">
          <motion.div initial={{display:'block',zIndex:1000}} animate={{zIndex:0,y:0,transitionEnd: {
@@ -25,7 +40,7 @@ export default class Contact extends Component {
               <div className="oval"><div className="back-contact"><Link to={"/home"}><img  src={require("./back.png")} alt=""/></Link></div><div className="dance-contact"><img src={require("./contact-icon.png")} alt="" /></div></div>
           </div>
           <div className="contact-body">
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
           <div className="divider"></div>
           <div className="input">FROM: <input type="email" name="email"  /></div>
           <div className="divider"></div>
@@ -45,5 +60,4 @@ export default class Contact extends Component {
           </motion.div></motion.div>
       </motion.div>
     )
-  }
 }
