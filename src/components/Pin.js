@@ -23,24 +23,24 @@ export default class Pin extends Component {
          <div className="pin-header"><div className="back-pin"><Link to={"/home"}><img  src={require("./back.png")} alt=""  /></Link></div></div>
          <div className="pin-body">
           <div className="pinleft">
-          <div className="pincard">
+          <div className="pincard"  id='pin1'>
       <div className="pincardicon"><img src={require("./pinup-icon.png")} alt="" /></div>
     
 
     </div>
-    <div className="pincard">
+    <div className="pincard" id='pin2'>
       <div className="pincardicon"><img src={require("./pinup-icon.png")} alt="" /></div>
     
 
     </div>
           </div>
-          <div className="pinright">
-          <div className="pincard">
+          <div className="pinright" >
+          <div className="pincard" id='pin3'>
       <div className="pincardicon"><img src={require("./pinup-icon.png")} alt="" /></div>
     
 
     </div>
-    <div className="pincard">
+    <div className="pincard" id='pin4'>
       <div className="pincardicon"><img src={require("./pinup-icon.png")} alt="" /></div>
     
 

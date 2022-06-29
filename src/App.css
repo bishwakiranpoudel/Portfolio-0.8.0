@@ -1007,6 +1007,19 @@ a:hover{
  width: 30px;
  height: 30px;
 }
+
+#pin1{
+  background-image: url("./components/pin1.png");
+}
+#pin2{
+  background-image: url("./components/pin2.png");
+}
+#pin3{
+  background-image: url("./components/pin3.png");
+}
+#pin4{
+  background-image: url("./components/pin4.png");
+}
 @keyframes beat {
   0%,100%{
     transform: scale(1);
