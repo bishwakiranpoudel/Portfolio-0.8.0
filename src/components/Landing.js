@@ -28,8 +28,8 @@ const min =  (new Date().getMinutes()<10?'0':'') + new Date().getMinutes();
         <div className="date">{day}, {month} {date}</div>
         </motion.div>
        <div className="landing-body">
-       <img className='gr' src={require("./GR.png")} alt="" />
-        <img className='name' src={require("./name.png")}alt="" />
+       <img className='gr' src={require("../static/GR-min.webp")} alt="" />
+        <img className='name' src={require("../static/name-min.webp")}alt="" />
       <Link to="/home"> <div className="enter" >
        <motion.ul initial={{opacity:1, y:0}}
     animate={{opacity:1, y:0}}
