@@ -11,7 +11,7 @@ export default class Profile extends Component {
           },}} transition={{duration:1}}>
             <div className="works" >
             <motion.div className="profile-box" initial={{scale:1,x:-100 }} animate={{scale:8, x:10,y:200}}transition={{duration:0.5}}>
-              <motion.img src={require("./profile-icon.png")} alt="" animate={{scale:0.1, x:18}}transition={{duration:0.5}} />
+              <motion.img src={require("../static/profile-icon-min.webp")} alt="" animate={{scale:0.1, x:18}}transition={{duration:0.5}} />
             </motion.div>
             
 
@@ -22,8 +22,8 @@ export default class Profile extends Component {
           },}} transition={{duration:1}}>
        <div class="mathi">
             <div class="header">
-            <Link to={'/home'}><img className="bck" src={require("./back.png")} alt=""  /></Link>
-                <motion.div className="circle" ><img src={require("./profile-icon.png")} alt="" /></motion.div>
+            <Link to={'/home'}><img className="bck" src={require("../static/back-min.webp")} alt=""  /></Link>
+                <motion.div className="circle" ><img src={require("../static/profile-icon-min.webp")} alt="" /></motion.div>
                 <div class="left"></div>
                 <div class="right"></div>
             </div>

@@ -59,7 +59,7 @@ export default function Home() {
         <motion.li variants={item} transition={{ type: "spring", stiffness: 100 }} ><Link to="/profile"><div className="profile" >
             <div className="profile-box">
               <div className="profile-box" >
-              <img src={require("./profile-icon.png")} />
+              <img src={require("../static/profile-icon-min.webp")} />
             </div>
             </div>
             <p><span>Profile</span></p>
@@ -68,7 +68,7 @@ export default function Home() {
           <motion.li variants={item} transition={{ type: "spring", stiffness: 100 }} ><Link to="/works"><div className="works" >
             <div className="work-box">
               <div className="work-box"  >
-              <img src={require("./works-icon.png")} alt=""  />
+              <img src={require("../static/works-icon-min.webp")} alt=""  />
             </div>
             </div>
             <p><span>Works</span></p>
@@ -76,7 +76,7 @@ export default function Home() {
           </div></Link></motion.li >
           <motion.li variants={item} transition={{ type: "spring", stiffness: 100 }}><Link to="/shop"><div className="shop" >
             <div className="shop-box">
-              <img src={require("./shop-icon.png")} alt="" />
+              <img src={require("../static/shop-icon-min.webp")} alt="" />
             </div>
             <p><span>Shop</span></p>
 
@@ -85,20 +85,20 @@ export default function Home() {
         <motion.ul variants={container}   >
           <motion.li variants={item} transition={{ type: "spring", stiffness: 100 }}><Link to="/contact"><div className="contact" >
             <div className="contact-box">
-              <img src={require("./contact-icon.png")} alt="" />
+              <img src={require("../static/contact-icon-min.webp")} alt="" />
             </div>
             <p><span>Contact</span></p>
           </div></Link></motion.li >
           <motion.li variants={item} transition={{ type: "spring", stiffness: 100 }}><Link to="/pin"><div className="pin" >
             <div className="pin-box">
-              <img src={require("./pinup-icon.png")} alt="" />
+              <img src={require("../static/pinup-icon-min.webp")} alt="" />
             </div>
             <p><span>Pin Ups</span></p>
 
           </div></Link></motion.li>
           <motion.li variants={item} transition={{ type: "spring", stiffness: 100 }}><Link to="/tools"><div className="tool" >
             <div className="tool-box">
-              <img src={require("./tools-icon.png")} alt="" />
+              <img src={require("../static/tools-icon-min.webp")} alt="" />
             </div>
             <p><span>Tools</span></p>
 
@@ -106,8 +106,8 @@ export default function Home() {
         </motion.ul>
       </motion.div>
       <div className="back">
-        <img className='gr2' src={require("./GR.png")} alt="" />
-        <img className='name' src={require("./name.png")} alt="" />
+        <img className='gr2' src={require("../static/GR-min.webp")} alt="" />
+        <img className='name' src={require("../static/name-min.webp")} alt="" />
         <p className='cr'><span>@2022 Bishwa</span></p>
       </div>
 

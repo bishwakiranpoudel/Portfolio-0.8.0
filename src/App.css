@@ -10,7 +10,7 @@ body{
 }
 @media all  and (min-width: 800px){
 .App{
-  background-image: url("./bg.png");
+  background-image: url("./static/bg-min.webp");
   position: relative;
   width: 100%;
   height: 100vh;
@@ -28,7 +28,7 @@ body{
  padding: 0px !important;
   background-size: 100vw 100vh;
   background-size: cover;
-  cursor: url(cursor.png), auto !important;
+  cursor: url(./static/cursor-min.webp), auto !important;
   /* filter: sepia(0) grayscale(0.5) contrast(1.1)brightness(); */
   
   /* filter: grayscale(0.5); */
@@ -39,7 +39,7 @@ body{
   width: 400px;
   height: 600px;
   
-  background-image: url("./back-png.png");
+  background-image: url("./static/back-png-min.webp");
   background-size: cover;
   /* margin: 20px; */
   border: 20px solid #3D3B39;
@@ -82,7 +82,7 @@ body{
    padding: 0px !important;
     background-size: 100vw 100vh;
     background-size: auto;
-    cursor: url(cursor.png), auto !important;
+    cursor: url(./static/cursor-min.webp), auto !important;
     /* filter: sepia(0) grayscale(0.5) contrast(1.1)brightness(); */
     
     /* filter: grayscale(0.5); */
@@ -94,7 +94,7 @@ body{
     width: 400px;
     height: 600px;
     
-    background-image: url("./back-png.png");
+    background-image: url("./static/back-png-min.webp");
     background-size: cover;
     /* margin: 20px; */
     border: 20px solid #3D3B39;
@@ -145,7 +145,7 @@ body{
 }
 .enter{
   display: flex;
-  cursor: url(pointer.png), pointer;
+  cursor: url(./static/pointer-min.webp), pointer;
   /* align-items: centre;
   justify-content: center; */
 }
@@ -211,7 +211,7 @@ span{
 }
 
 img{
-  cursor: url(pointer.png), pointer;
+  cursor: url(./static/pointer-min.webp), pointer;
 }
 
 .back{
@@ -252,7 +252,7 @@ img{
 }
 
 .home li:hover{
-  cursor: url(pointer.png), pointer;
+  cursor: url(./static/pointer-min.webp), pointer;
   
 }
 
@@ -447,7 +447,7 @@ transform: scale(1.04);
   border-top-left-radius:0px ;
   border-top-right-radius: 60px;
   border-top: #3D3B39 solid 10px;
-  background-image: url("./components/profback.png");
+  background-image: url("./static/profback-min.webp");
   background-size: cover;
   
 }
@@ -459,12 +459,12 @@ transform: scale(1.04);
   border-top-right-radius:0px ;
   border-top-left-radius: 60px;
   border-top: #3D3B39 solid 10px;
-  background-image: url("./components/profback.png");
+  background-image: url("./static/profback-min.webp");
   background-size: cover;
   
 }
 .mathi{
-  background-image: url("./components/headerbg.png");
+  background-image: url("./static/headerbg-min.webp");
   background-size: contain;
   background-color: #F4DA27;
 }
@@ -477,7 +477,7 @@ transform: scale(1.04);
   margin-right:auto ;
   margin-top: -45px;
   border: #3D3B39 solid 5px;
-  background-image: url("./components/me.png");
+  background-image: url("./static/me-min.webp");
   background-size: 100px;
   
 }
@@ -533,7 +533,7 @@ font-family:'lOBSTER';
 
 .socials{
   display: flex;
-  cursor: url(pointer.png), pointer;
+  cursor: url(./static/pointer-min.webp), pointer;
 }
 .insta i{
   margin-left: 6px;
@@ -587,7 +587,7 @@ border-bottom: #3D3B39 solid 0px;
   width: 100%;
   height: 120px;
   background-color: none;
-  background-image: url("./components/work-header.png");
+  background-image: url("./static/work-header-min.webp");
   
 }
 .star{
@@ -735,7 +735,7 @@ overflow: hidden;
 .contact-top{
   width: 420px;
   height: 150px;
-  background-image: url("./components/contact-header.png");
+  background-image: url("./static/contact-header-min.webp");
 }
 .contact-page{
   background-color: white;
@@ -847,7 +847,7 @@ transform: translateX(4px) translateY(4px);
   position: relative;
   background-color: transparent;
   border-radius: 30px;
-  animation: contact-back 1s infinite;background-image: url("./components/contact-oval.png");
+  animation: contact-back 1s infinite;background-image: url("./static/contact-oval-min.webp");
   background-size: cover;
 
 }
@@ -897,7 +897,7 @@ transform: translateX(4px) translateY(4px);
 .pin-page{
   
 width: 100%;
-background-image: url("./components/pinbackground.png");
+background-image: url("./static/pinbackground-min.webp");
   
 
 }
@@ -906,7 +906,7 @@ background-image: url("./components/pinbackground.png");
   height: 100px;
 width: 100%;
 background-color: transparent;
-  background-image: url("./components/pin-header.png");
+  background-image: url("./static/pin-header-min.webp");
 }
 .back-pin{
   width: fit-content;
@@ -953,7 +953,7 @@ scrollbar-width: none;
   height: 140px;
   width: 100%;
   background-color: #fffefd;
-    background-image: url("./components/shop-header.png");
+    background-image: url("./static/shop-header-min.webp");
     background-size: cover;
 
 }
@@ -1009,16 +1009,16 @@ a:hover{
 }
 
 #pin1{
-  background-image: url("./components/pin1.png");
+  background-image: url("./static/pin1-min.webp");
 }
 #pin2{
-  background-image: url("./components/pin2.png");
+  background-image: url("./static/pin2-min.webp");
 }
 #pin3{
-  background-image: url("./components/pin3.png");
+  background-image: url("./static/pin3-min.webp");
 }
 #pin4{
-  background-image: url("./components/pin4.png");
+  background-image: url("./static/pin4-min.webp");
 }
 @keyframes beat {
   0%,100%{

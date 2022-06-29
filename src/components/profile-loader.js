@@ -7,7 +7,7 @@ export default class Profileloader extends Component {
     return (
 <motion.div ><Link to="/profile"><div className="works" >
             <motion.div className="work-box" initial={{scale:1,x:-100 }} animate={{scale:8, x:10,y:200}}>
-              <motion.img src={require("./works-icon.png")} alt="" animate={{scale:0.1}} />
+              <motion.img src={require("../static/works-icon-min.webp")} alt="" animate={{scale:0.1}} />
             </motion.div>
             
 

@@ -11,7 +11,7 @@ export default class Shop extends Component {
           },}} transition={{duration:1}}>
             <div className="shop" >
             <motion.div className="shop-box" initial={{scale:1,x:-100 }} animate={{scale:8, x:10,y:200}}transition={{duration:0.5}}>
-              <motion.img src={require("./shop-icon.png")} alt="" animate={{scale:0.1, x:17}}transition={{duration:0.5}} />
+              <motion.img src={require("../static/shop-icon-min.webp")} alt="" animate={{scale:0.1, x:17}}transition={{duration:0.5}} />
             </motion.div>
             
 
@@ -20,7 +20,7 @@ export default class Shop extends Component {
             <motion.div initial={{display:"none"}} animate={{opacity:1,transitionEnd: {
             display: "block",
           },}} transition={{duration:1}}>
-          <div className="shop-header"><div className="back-shop"><Link to={"/home"}><img  src={require("./back.png")} alt="" /></Link></div></div>
+          <div className="shop-header"><div className="back-shop"><Link to={"/home"}><img  src={require("../static/back-min.webp")} alt="" /></Link></div></div>
           <div className="shop-body"></div>
           </motion.div>
       </motion.div>
