@@ -62,7 +62,7 @@ export default function Home() {
               <img src={require("./profile-icon.png")} />
             </div>
             </div>
-            <p><span>profile</span></p>
+            <p><span>Profile</span></p>
 
           </div></Link></motion.li >
           <motion.li variants={item} transition={{ type: "spring", stiffness: 100 }} ><Link to="/works"><div className="works" >
@@ -78,7 +78,7 @@ export default function Home() {
             <div className="shop-box">
               <img src={require("./shop-icon.png")} alt="" />
             </div>
-            <p><span>shop</span></p>
+            <p><span>Shop</span></p>
 
           </div></Link></motion.li >
         </motion.ul>

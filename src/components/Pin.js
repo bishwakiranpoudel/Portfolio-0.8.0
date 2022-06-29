@@ -21,7 +21,34 @@ export default class Pin extends Component {
             display: "block",
           },}} transition={{duration:1}}>
          <div className="pin-header"><div className="back-pin"><Link to={"/home"}><img  src={require("./back.png")} alt=""  /></Link></div></div>
-         <div className="pin-body"></div>
+         <div className="pin-body">
+          <div className="pinleft">
+          <div className="pincard">
+      <div className="pincardicon"><img src={require("./pinup-icon.png")} alt="" /></div>
+    
+
+    </div>
+    <div className="pincard">
+      <div className="pincardicon"><img src={require("./pinup-icon.png")} alt="" /></div>
+    
+
+    </div>
+          </div>
+          <div className="pinright">
+          <div className="pincard">
+      <div className="pincardicon"><img src={require("./pinup-icon.png")} alt="" /></div>
+    
+
+    </div>
+    <div className="pincard">
+      <div className="pincardicon"><img src={require("./pinup-icon.png")} alt="" /></div>
+    
+
+    </div>
+          </div>
+
+
+         </div>
          </motion.div>
      </motion.div>
     )
