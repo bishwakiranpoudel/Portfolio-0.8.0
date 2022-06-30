@@ -66,7 +66,7 @@ export default class Works extends Component {
               <div class="divider"></div>
               <div class="name-project">LinkBinary</div>
               <div class="divider"></div>
-              <div class="image-project"><img src={require("../static/bg-min.webp")} alt="" /></div>
+              <div class="image-project"><img src={require("../static/Linkbinary.webp")} alt="" /></div>
               <div class="divider"></div>
               <div class="unlike" id='like-btn2' onClick={this.myFunction2}><img src={require("../static/like-min.webp")} alt="" /></div>
               <div class="description-project">Co-Founded a software company based in Birtamode, Nepal and currently assuming the position of CTO and all the responsibilities it brings</div>
@@ -87,7 +87,7 @@ export default class Works extends Component {
               <div class="divider"></div>
               <div class="name-project">Ghinalagdo</div>
               <div class="divider"></div>
-              <div class="image-project"><img src={require("../static/bg-min.webp")} alt="" /></div>
+              <div class="image-project"><img src={require("../static/ghinlagdo.webp")} alt="" /></div>
               <div class="divider"></div>
               <div class="unlike" id='like-btn3' onClick={this.myFunction3}><img src={require("../static/like-min.webp")} alt="" /></div>
               <div class="description-project">Clothing brand in the making</div>
