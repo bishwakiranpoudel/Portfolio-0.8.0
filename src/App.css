@@ -1224,14 +1224,14 @@ ellipse{
       @keyframes a {
           0%,100%{
             
-            fill:#7CAFFF;
+            fill:#1E8FE2;
             
             
             
           }
           50% {
             
-            fill:#1D90E2;
+            fill:#7DAFFF;
             
             
           }
@@ -1242,7 +1242,7 @@ ellipse{
         @keyframes a2 {
           0%,100%{
             
-            fill:#1D90E2;
+            fill:#7DAFFF;
             
               
             
@@ -1250,7 +1250,7 @@ ellipse{
           }
           50% {
             
-           fill:#7CAFFF
+           fill:#1E8FE2
           }
           /* 100%{
             transform: scale(1.1);
