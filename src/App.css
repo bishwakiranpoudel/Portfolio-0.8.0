@@ -1258,17 +1258,17 @@ ellipse{
         }
         #on {
 
-          animation: a 2s infinite;
+          animation: b 2s infinite;
         
         }
         
         #to {
         
-          animation: a2 2s infinite;
+          animation: b2 2s infinite;
         }
         
         
-          @keyframes a {
+          @keyframes b {
               0%,100%{
                 
                 fill:#FBC8DE;
@@ -1286,7 +1286,7 @@ ellipse{
                 transform: scale(1.1);
               } */
             }
-            @keyframes a2 {
+            @keyframes b2 {
               0%,100%{
                 
                 fill:#1E51E6;
