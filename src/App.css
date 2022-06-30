@@ -55,6 +55,7 @@ body{
   }
 }
 @media all  and (max-width: 800px){
+  body
   
   .App{
     background-image: linear-gradient(to right, #93B075 50%,#3D3B39 50%);
@@ -64,7 +65,7 @@ body{
     
     position: relative;
     width: 100%;
-    height: 98vh;
+    height: 100vh;
     display: -webkit-flex;
     display: -moz-box;
     display: flex;
