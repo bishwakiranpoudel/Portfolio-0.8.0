@@ -892,6 +892,8 @@ transform: translateX(4px) translateY(4px);
 }
 .tools-header svg{
   position: fixed;
+  border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
   
 }
 .pin-page{
@@ -906,7 +908,12 @@ background-image: url("./static/pinbackground-min.webp");
   height: 100px;
 width: 100%;
 background-color: transparent;
-  background-image: url("./static/pin-header-min.webp");
+display: flex;
+}
+.pin-header svg{
+  position: absolute;
+  border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 .back-pin{
   width: fit-content;
@@ -919,12 +926,13 @@ background-color: transparent;
   z-index: 100;
   position: relative;
 }
-.back-pin:hover{
+.back-pin img:hover{
   transform: scale(1.1) ;
 }
 
 .pin-body{
-height: 500px;
+  padding-top: 24px;
+  height: 472px;
 background-color: transparent;
 
 display: flex;
@@ -953,17 +961,29 @@ scrollbar-width: none;
   height: 140px;
   width: 100%;
   background-color: #fffefd;
-    background-image: url("./static/shop-header-min.webp");
+    
     background-size: cover;
+    display: flex;
 
 }
+.shop-header svg{
+  position: absolute;
+  border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  
+}
 .back-shop img{
-  width: 50px;
+  width: 40px;
   height: 30px;
-  margin:10px;
+  margin: 10px;
+  position: relative;
+  z-index: 100;
   
   }
-.back-shop:hover{
+.back-shop{
+  width: fit-content;
+}
+.back-shop img:hover{
  transform: scale(1.1);
 }
 
@@ -1187,3 +1207,99 @@ ellipse{
       } */
     }
 
+
+
+    #o {
+
+      animation: a 2s infinite;
+    
+    }
+    
+    #t {
+    
+      animation: a2 2s infinite;
+    }
+    
+    
+      @keyframes a {
+          0%,100%{
+            
+            fill:#7CAFFF;
+            
+            
+            
+          }
+          50% {
+            
+            fill:#1D90E2;
+            
+            
+          }
+          /* 100%{
+            transform: scale(1.1);
+          } */
+        }
+        @keyframes a2 {
+          0%,100%{
+            
+            fill:#1D90E2;
+            
+              
+            
+            
+          }
+          50% {
+            
+           fill:#7CAFFF
+          }
+          /* 100%{
+            transform: scale(1.1);
+          } */
+        }
+        #on {
+
+          animation: a 2s infinite;
+        
+        }
+        
+        #to {
+        
+          animation: a2 2s infinite;
+        }
+        
+        
+          @keyframes a {
+              0%,100%{
+                
+                fill:#FBC8DE;
+                
+                
+                
+              }
+              50% {
+                
+                fill:#1E51E6;
+                
+                
+              }
+              /* 100%{
+                transform: scale(1.1);
+              } */
+            }
+            @keyframes a2 {
+              0%,100%{
+                
+                fill:#1E51E6;
+                
+                  
+                
+                
+              }
+              50% {
+                
+               fill:#FBC8DE
+              }
+              /* 100%{
+                transform: scale(1.1);
+              } */
+            }
