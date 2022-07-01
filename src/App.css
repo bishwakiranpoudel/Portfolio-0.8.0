@@ -128,7 +128,7 @@ body{
   color: white;
   
   margin-top: 40px;
-  margin-left: 9%;
+ text-align: center;
  
   z-index: 100;
   position: relative;
@@ -136,10 +136,10 @@ body{
 .date{
  
   font-size: 28px;
-    margin-left: 28%;
+   
 }
 .time{
-  margin-left: 10%;
+ 
   font-size: 100px;
 }
 .landing-body{
