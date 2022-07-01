@@ -97,7 +97,7 @@ export default class Works extends Component {
               <div class="divider"></div>
               <div class="name-project">DhanLaxmi Jewellery</div>
               <div class="divider"></div>
-              <div class="image-project"><img src={require("../static/bg-min.webp")} alt="" /></div>
+              <div class="image-project"><img src={require("../static/dhanlaxmi-min.webp")} alt="" /></div>
               <div class="divider"></div>
               <div class="unlike" id='like-btn4' onClick={this.myFunction4}><img src={require("../static/like-min.webp")} alt="" /></div>
               <div class="description-project">A simple catelog site.</div>
@@ -107,7 +107,7 @@ export default class Works extends Component {
               <div class="divider"></div>
               <div class="name-project">Binary EHR</div>
               <div class="divider"></div>
-              <div class="image-project"><img src={require("../static/bg-min.webp")} alt="" /></div>
+              <div class="image-project"><img src={require("../static/Linkbinary.webp")} alt="" /></div>
               <div class="divider"></div>
               <div class="unlike" id='like-btn5' onClick={this.myFunction5}><img src={require("../static/like-min.webp")} alt="" /></div>
               <div class="description-project">Electronic Health record system.</div>
@@ -117,7 +117,7 @@ export default class Works extends Component {
               <div class="divider"></div>
               <div class="name-project">Binary HRM</div>
               <div class="divider"></div>
-              <div class="image-project"><img src={require("../static/bg-min.webp")} alt="" /></div>
+              <div class="image-project"><img src={require("../static/Linkbinary.webp")} alt="" /></div>
               <div class="divider"></div>
               <div class="unlike" id='like-btn6' onClick={this.myFunction6}><img src={require("../static/like-min.webp")} alt="" /></div>
               <div class="description-project">Human Reasource management Software.</div>
@@ -127,7 +127,7 @@ export default class Works extends Component {
               <div class="divider"></div>
               <div class="name-project">Binary Inventory</div>
               <div class="divider"></div>
-              <div class="image-project"><img src={require("../static/bg-min.webp")} alt="" /></div>
+              <div class="image-project"><img src={require("../static/Linkbinary.webp")} alt="" /></div>
               <div class="divider"></div>
               <div class="unlike" id='like-btn7' onClick={this.myFunction7}><img src={require("../static/like-min.webp")} alt="" /></div>
               <div class="description-project">Inventory management software.</div>
