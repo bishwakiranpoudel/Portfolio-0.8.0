@@ -141,38 +141,14 @@ button path{
     /* filter: grayscale(0.5); */
 
   }
+  /* #pageContainer0 svg{
+    display: none;
+  } */
+  #button2i0{
+    display: none;
+  }
   body .App2 {
-    background-image: linear-gradient(to right, #6c4f8a 50%, #c2c4c6 50%);
-
-
-    /* background-color: #3D3B39; */
-
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    max-height: -webkit-fill-available;
-    min-height: -webkit-fill-available;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: flex;
-    -webkit-align-items: center;
-    -moz-box-align: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    -moz-box-pack: center;
-    justify-content: center;
-
-    overflow-x: hidden;
-    align-items: center;
-
-    margin: 0px !important;
-    padding: 0px !important;
-    background-size: 100vw 100vh;
-    background-size: auto;
-    cursor: url(./static/cursor-min.webp), auto !important;
-    /* filter: sepia(0) grayscale(0.5) contrast(1.1)brightness(); */
-
-    
+display: none;
  
 
   }
