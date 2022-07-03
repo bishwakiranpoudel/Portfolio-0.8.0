@@ -25,7 +25,7 @@ export default class Pin extends Component {
           },
         }} transition={{ duration: 1 }}>
           <div className="pin-header"><div className="back-pin"><Link to={"/home"}><img src={require("../static/back-min.webp")} alt="" /></Link></div>
-          <div class="star-pin"><img src={require("../static/pinup-icon-min.webp")} alt="" /></div>
+          <div class="star-pin"><img classname="alpha"src={require("../static/pinup-icon-min.webp")} alt="" /></div>
           <svg width="401" height="151" viewBox="0 0 401 151" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="pin" clip-path="url(#clip0_4_177)">
               <rect width="401" height="151" fill="none" />

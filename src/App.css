@@ -1516,29 +1516,30 @@ ellipse {
 
 .star-pin {
   margin-top: 4px;
-  margin-left: 15%;
+  margin-left: 20%;
   
-  background-image: url("./static/cloud.png");
+  background-image: url("./static/kei.svg");
   align-self: center;
 
    
     background-size: cover;
     height: 99px;
-    width: 168px;
+    width: 100px;
   z-index: 100;
   position: relative;
   animation: sp 2s infinite;
+  display: block;
+  border-radius: 8px;
  
 }
 
 .star-pin img {
-  padding-left: 49px;
-  padding-top: 13px;
+  float: right;
+  
   z-index: 100;
   position: relative;
-  width: 70px;
-  animation: none;
-  animation: sp2 1s infinite;
+  width: 30px;
+ 
 }
 
 @keyframes sp {
@@ -1546,7 +1547,8 @@ ellipse {
   0%,
   100% {
 
-    transform:translateY(10px) ;
+    transform:rotate(-40deg) ;
+    transform-origin: 70px 28px;
 
 
 
@@ -1554,7 +1556,7 @@ ellipse {
 
   50% {
 
-    transform: translateY(0px) ;
+    transform: rotate(-20deg) ;
 
 
   }
