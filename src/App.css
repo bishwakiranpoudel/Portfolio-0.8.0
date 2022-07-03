@@ -1649,3 +1649,17 @@ ellipse {
     transform: scale(1.1);
   } */
 }
+
+.shop-body img{
+  margin-left: 62px;
+    /* margin-right: auto; */
+    width: 280px;
+    
+}
+.tools-body img{
+  margin-left: 62px;
+    /* margin-right: auto; */
+    width: 280px;
+    margin-top: 35px;
+    
+}

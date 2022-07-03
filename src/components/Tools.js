@@ -145,7 +145,9 @@ export default class Tools extends Component {
               </clipPath>
             </defs>
           </svg></div>
-          <div className="tools-body"></div>
+          <div className="tools-body">
+          <img src={require("../static/getout2-min.webp")} alt="" />
+          </div>
         </motion.div>
       </motion.div>
     )

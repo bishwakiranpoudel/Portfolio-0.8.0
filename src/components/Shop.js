@@ -47,7 +47,9 @@ export default class Shop extends Component {
             </svg>
 
           </div>
-          <div className="shop-body"></div>
+          <div className="shop-body">
+          <img src={require("../static/getout-min.webp")} alt="" />
+          </div>
         </motion.div>
       </motion.div>
     )

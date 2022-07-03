@@ -12,6 +12,7 @@ import { AnimatePresence } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Profileloader from './components/profile-loader';
+import PasswordGenerator from './components/password generator';
 
 
 
@@ -33,6 +34,8 @@ export default function AnimatedRoutes() {
             <Route path="/shop" element={<Shop />} />
             <Route path="/profileloader" element={<Profileloader/>} />
             <Route path="/pincard" element={<PinCard/>}/>
+            <Route path="/passwordgenerator" element={<PasswordGenerator/>}/>
+
             
 
 
