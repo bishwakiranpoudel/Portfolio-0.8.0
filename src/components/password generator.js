@@ -61,7 +61,7 @@ const PasswordGenerator = () => {
   }, [])
 
   return (
-    <div className='app'>
+    <div className='pgen'>
       <span>Password Generator</span>
       <div className='password'>{password}</div>
       <div className='container'>
