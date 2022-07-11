@@ -3,7 +3,7 @@ import { useRef } from "react";
 export function useOnDraw(onDraw){
     const canvasRef = useRef(null);
     const isDrawingRef =useRef(false);
-    const prevPointRef= useRef(null);
+    const prevPointRef = useRef(null);
 
     function setCanvasRef(ref){
         if(!ref) return;
@@ -17,8 +17,8 @@ export function useOnDraw(onDraw){
             if(isDrawingRef.current){
                 const point = computePointInCanvas(e.clientX,e.clientY);
                 const ctx= canvasRef.current.getContext('2d');
-                if(onDraw) onDraw(ctx, point, prevPointRef.current);
-                prevPointRef.current=point;
+                if (onDraw) onDraw(ctx, point, prevPointRef.current);
+                prevPointRef.current = point;
                 console.log(point);
 
             }
