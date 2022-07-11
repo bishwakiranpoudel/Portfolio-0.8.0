@@ -7,12 +7,14 @@ import Contact from './components/Contact';
 import Tools from './components/Tools';
 import Pin from './components/Pin';
 import Shop from './components/Shop';
-import PinCard from './components/pin_card';
+
 import { AnimatePresence } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Profileloader from './components/profile-loader';
 import PasswordGenerator from './components/password generator';
+import Pindetail from './components/pindetail';
+import Canvas from './components/canvas';
 
 
 
@@ -33,8 +35,13 @@ export default function AnimatedRoutes() {
             <Route path="/pin" element={<Pin />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/profileloader" element={<Profileloader/>} />
-            <Route path="/pincard" element={<PinCard/>}/>
+            <Route path="/pindetail" element={<Pindetail/>} />
+           
+
             <Route path="/passwordgenerator" element={<PasswordGenerator/>}/>
+            <Route path="/canvas" element={<Canvas
+           
+            />}/>
 
             
 

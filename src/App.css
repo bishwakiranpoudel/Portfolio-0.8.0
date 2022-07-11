@@ -1664,3 +1664,20 @@ ellipse {
     margin-top: 35px;
     
 }
+.cv{
+  background-color: #3D3B39;
+
+
+}
+canvas{
+  background-color: #d9d9d9;
+}
+h3{
+  background-color: #3D3B39;
+  color: #d9d9d9;
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Dela Gothic One', cursive;
+
+
+}
