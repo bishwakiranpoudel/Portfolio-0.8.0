@@ -1681,3 +1681,11 @@ h3{
 
 
 }
+
+.refresh{
+  float: right;
+  margin-right: 26px;
+  font-family: 'Dela Gothic One', cursive;
+  color: #d9d9d9;
+
+}

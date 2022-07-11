@@ -1,5 +1,6 @@
 import { useRef } from "react";
 
+
 export function useOnDraw(onDraw){
     const canvasRef = useRef(null);
     const isDrawingRef =useRef(false);
@@ -25,7 +26,7 @@ export function useOnDraw(onDraw){
             
            
         }
-        window.addEventListener("mousemove", mouseMoveListener);
+        window.addEventListener("pointermove", mouseMoveListener);
 
     }
     function initMouseUpListener(){
@@ -33,14 +34,14 @@ export function useOnDraw(onDraw){
             isDrawingRef.current =false;
             prevPointRef.current = null;
         }
-        window.addEventListener('mouseup',listener);
+        window.addEventListener('pointerup',listener);
     }
     function initMouseDownListener(){
         if(!canvasRef.current) return;
         const listener =()=>{
             isDrawingRef.current =true;
         }
-        canvasRef.current.addEventListener("mousedown", listener)
+        canvasRef.current.addEventListener("pointerdown", listener)
     }
 
 

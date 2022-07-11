@@ -11,6 +11,9 @@ const Canvas=({
     //     ctx.fill();
 
     //  }
+    function refreshPage() {
+        window.location.reload(false);
+      }
     function onDraw(ctx, point, prevPoint) {
         drawLine(prevPoint, point, ctx, '#000000', 5);
     }
@@ -41,6 +44,7 @@ const Canvas=({
     return(
         <div className="cv">
             <h3>SAKALAKA BOOM BOOM</h3>
+            <div className="refresh" onClick={refreshPage}><img src={require("../static/refresh.webp")} alt="" /></div>
         <canvas 
         
         ref={setCanvasRef}
