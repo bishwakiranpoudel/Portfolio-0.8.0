@@ -1678,17 +1678,12 @@ h3{
   text-align: center;
   font-size: 22px;
   font-family: 'Dela Gothic One', cursive;
+  margin-bottom: 10px;
 
 
 }
 
-.refresh{
-  float: right;
-  margin-right: 26px;
-  font-family: 'Dela Gothic One', cursive;
-  color: #d9d9d9;
 
-}
 
 .pgen{
   background-color: #3D3B39;
@@ -1725,4 +1720,86 @@ h3{
   padding: 5px;
   color: #3D3B39;
   margin: 10px;
+}
+
+.cv ul{
+  width: fit-content;
+  list-style: none;
+  display: flex;
+  margin: 10px;
+  padding: 5px;
+  margin-right:0px ;
+}
+
+.cv li{
+  margin: 5px;
+  padding: 5px;
+  width: 20px;
+  height: 5px;
+  border-radius: 10px;
+  border: #d9d9d9 1px solid;
+}
+
+.cv li:focus{
+  border: #93B075 1px solid;
+}
+.cv li:hover{
+  border: #93B075 1px solid;
+}
+.cv li:active{
+  border: #93B075 1px solid;
+}
+
+
+.cv .red{
+  background-color: #FF612F;
+}
+
+.cv .blue{
+  background-color: #7bdaff;
+}
+
+.cv .green{
+  background-color: #93B075;
+}
+
+.cv .yellow{
+  background-color: #FFF500;
+}
+
+.cv .black{
+  background-color: #3D3B39;
+}
+
+.cv .erase{
+  background-color: #d9d9d9;
+}
+
+.refresh{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  font-family: 'Dela Gothic One', cursive;
+  color: #d9d9d9;
+  padding-left: 5px;
+
+}
+.eraser{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  font-family: 'Dela Gothic One', cursive;
+  color: #d9d9d9;
+  padding-right: 5px;
+
+}
+.align{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
