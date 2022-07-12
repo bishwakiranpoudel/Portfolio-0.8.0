@@ -16,7 +16,19 @@ export function useOnDraw(onDraw){
     function initMouseMoveListener(){
         const mouseMoveListener = (e) =>{
             if(isDrawingRef.current){
-                const point = computePointInCanvas(e.clientX,e.clientY);
+                console.log(e.type);
+                if(e.type==="touchmove"){
+                    console.log("sucess");
+                    
+                    x = computePointInCanvas(e.touches[0].clientX,e.touches[0].clientY);
+                    
+                }
+                
+                else{
+                    var x =computePointInCanvas(e.clientX,e.clientY);
+                   
+                }
+                const point = x;
                 const ctx= canvasRef.current.getContext('2d');
                 if (onDraw) onDraw(ctx, point, prevPointRef.current);
                 prevPointRef.current = point;
@@ -26,7 +38,22 @@ export function useOnDraw(onDraw){
             
            
         }
-        window.addEventListener("pointermove", mouseMoveListener);
+        
+        if('ontouchstart' in window ){
+            
+            console.log("muji");
+            console.log(window.TouchEvent);
+            console.log(window.MouseEvent);
+            window.addEventListener('touchmove',mouseMoveListener);
+
+
+        }
+        else{
+            console.log("lado");
+            window.addEventListener('mousemove',mouseMoveListener);
+
+        }
+        
 
     }
     function initMouseUpListener(){
@@ -34,14 +61,32 @@ export function useOnDraw(onDraw){
             isDrawingRef.current =false;
             prevPointRef.current = null;
         }
-        window.addEventListener('pointerup',listener);
+        if('ontouchstart' in window ){
+            window.addEventListener('touchend',listener);
+
+
+        }
+        else{
+            window.addEventListener('mouseup',listener);
+
+        }
+        
     }
     function initMouseDownListener(){
         if(!canvasRef.current) return;
         const listener =()=>{
             isDrawingRef.current =true;
         }
-        canvasRef.current.addEventListener("pointerdown", listener)
+        if('ontouchstart' in window ){
+            canvasRef.current.addEventListener("touchstart", listener);
+
+
+        }
+        else{
+            canvasRef.current.addEventListener("mousedown", listener);
+
+        }
+        
     }
 
 
