@@ -3,6 +3,14 @@ import React, { useState } from 'react';
 const Canvas=({
    
 })=>{
+    function download(){
+        var canvas = document.getElementById("canvas");
+        var url = canvas.toDataURL("image/png");
+        var link = document.createElement('a');
+        link.download = 'artist.png';
+        link.href = url;
+        link.click();
+      }
     const [value, setValue] = useState();
     var col = "#3D3B39";
 
@@ -10,7 +18,7 @@ const Canvas=({
         // re-renders the component
         var canvas = document.getElementById('canvas'),
         ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
     const red = ()=>{
         col = "#FF612F";
@@ -93,6 +101,7 @@ const Canvas=({
             <div className="eraser" onClick={ erase }><img src={require("../static/eraser.webp")} alt="" /></div>
             <div className="refresh" onClick={ refresh }><img src={require("../static/refresh.webp")} alt="" /></div>
             </div>
+            <div onClick={ download } className='download'>Download your shitty art</div>
         <canvas id="canvas"
         
         ref={setCanvasRef}

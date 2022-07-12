@@ -1803,3 +1803,23 @@ h3{
   justify-content: center;
   align-items: center;
 }
+.download{
+  margin: 5px;
+  width: fit-content;
+  background-color: #d9d9d9;
+  color: #3D3B39;
+  font-family: 'Dela Gothic One', cursive;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  padding: 3px;
+  cursor: url(./static/pointer-min.webp), pointer !important;
+}
+.download:hover{
+  transform: scale(1.1);
+ 
+}
+
+.download:active{
+  transform: scale(1.1);
+}
