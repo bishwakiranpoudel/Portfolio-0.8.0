@@ -1838,3 +1838,68 @@ h3{
   transform: scale(1.1);
   filter: invert(1);
 }
+
+.qr{
+  background-color: #3D3B39;
+  color: #d9d9d9;
+  width: 100%;
+  height: 100%;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+.qr input{
+  background-color: #d9d9d9;
+  color: #3D3B39;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: 'Dela Gothic One', cursive;
+  width: 200px;
+
+}
+.qr input:focus{
+  
+  border: none;
+
+}
+.qr input:active{
+  
+  border: none;
+
+}
+
+.qr button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  border: none;
+  background-color: #d9d9d9;
+  color: #3D3B39;
+  padding: 5px;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+.qr h1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-self: center;
+}
+
+.qr canvas{
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  color: #3D3B39;
+  fill: #3D3B39;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Dela Gothic One', cursive;
+}

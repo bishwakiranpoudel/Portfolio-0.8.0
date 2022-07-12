@@ -15,6 +15,7 @@ import Profileloader from './components/profile-loader';
 import PasswordGenerator from './components/password generator';
 import Pindetail from './components/pindetail';
 import Canvas from './components/canvas';
+import Qrgenerator from './components/qrgenerator';
 
 
 
@@ -39,9 +40,8 @@ export default function AnimatedRoutes() {
            
 
             <Route path="/passwordgenerator" element={<PasswordGenerator/>}/>
-            <Route path="/canvas" element={<Canvas
-           
-            />}/>
+            <Route path="/canvas" element={<Canvas/>}/>
+            <Route path="/qrgenerator" element={<Qrgenerator/>}/>
 
             
 

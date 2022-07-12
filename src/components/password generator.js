@@ -17,8 +17,8 @@ const PasswordGenerator = () => {
       return setErrors('Password length cannot be 0')
     } else if (passwordLength === '') {
       return setErrors('Invalid password length')
-    } else if (passwordLength > 80) {
-      return setErrors('Password length cannot exceed 80 characters')
+    } else if (passwordLength > 30) {
+      return setErrors('Password length cannot exceed 30 characters')
     }
 
     let password = ''
