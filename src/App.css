@@ -1701,3 +1701,28 @@ h3{
 .pgen span{
 
 }
+
+.generate input{
+  background-color: #d9d9d9;
+  color: #3D3B39;
+  font-family: 'Dela Gothic One', cursive;
+  float:right;
+  padding: 5px;
+}
+.option input{
+  background-color: #d9d9d9;
+  color: #3D3B39;
+  font-family: 'Dela Gothic One', cursive;
+  float:right;
+  padding: 5px;
+}
+.option{
+  margin: 10px;
+}
+.password{
+  background-color: #d9d9d9;
+  width: fit-content;
+  padding: 5px;
+  color: #3D3B39;
+  margin: 10px;
+}

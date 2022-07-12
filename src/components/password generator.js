@@ -63,7 +63,7 @@ const PasswordGenerator = () => {
   return (
     <div className='pgen'>
       <span>Password Generator</span>
-      <div className='password'>{password}</div>
+      <div className='password' onClick={() => {navigator.clipboard.writeText(this.state.textToCopy)}}>{password}</div>
       <div className='container'>
         <div className='subContainer'>
           <div className='option'>
@@ -120,7 +120,7 @@ const PasswordGenerator = () => {
 
           {errors.length && <li className='error'>{errors}</li>}
 
-          <div className='button'>
+          <div className='generate'>
             <input
               type='submit'
               name='generate'
