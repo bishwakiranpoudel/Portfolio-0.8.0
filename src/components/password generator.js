@@ -55,6 +55,11 @@ const PasswordGenerator = () => {
     const symbols = "~*$%@#^&!?*'-=/,.{}()[]<>"
     return symbols[random(0, symbols.length - 1)]
   }
+  function sopy(){
+    var pw = document.getElementById("password");
+    
+    navigator.clipboard.writeText(pw.innerHTML);
+  }
 
   useEffect(() => {
     generatePassword()
@@ -63,7 +68,8 @@ const PasswordGenerator = () => {
   return (
     <div className='pgen'>
       <span>Password Generator</span>
-      <div className='password' onClick={() => {navigator.clipboard.writeText(this.state.textToCopy)}}>{password}</div>
+      <div className="str"><div className='password' id='password' >{password}</div><img onClick={ sopy } src={require("../static/clipboard.webp")} alt="" /></div>
+      
       <div className='container'>
         <div className='subContainer'>
           <div className='option'>
