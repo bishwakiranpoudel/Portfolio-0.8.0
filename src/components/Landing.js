@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import {motion} from "framer-motion";
 import { Link } from "react-router-dom";
-
+import useSound from 'use-sound';
+import entersfx from "../static/enter.mp3"
 
 
 
 export default function Landing() {
+  const [play] = useSound(entersfx);
   const today =['sun', 'mon' ,'tue','wed', 'thurs','fri','sat'];
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const date = new Date().getDate();
@@ -30,7 +32,7 @@ const min =  (new Date().getMinutes()<10?'0':'') + new Date().getMinutes();
        <div className="landing-body">
        <img className='gr' src={require("../static/GR-min.webp")} alt="" />
         <img className='name' src={require("../static/name-min.webp")}alt="" />
-      <Link to="/home"> <div className="enter" >
+      <Link to="/home"> <div className="enter" onClick={play}>
        <motion.ul initial={{opacity:1, y:0}}
     animate={{opacity:1, y:0}}
     exit={{opacity:1, y:-600}}
