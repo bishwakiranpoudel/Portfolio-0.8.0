@@ -1671,6 +1671,7 @@ ellipse {
 }
 canvas{
   background-color: #d9d9d9;
+  cursor: url(./static/pencil.webp), pointer !important;
 }
 h3{
   background-color: #3D3B39;
