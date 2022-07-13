@@ -1699,6 +1699,8 @@ h3{
 }
 
 .generate input{
+  border: none;
+  border-radius: 5px;
   background-color: #d9d9d9;
   color: #3D3B39;
   font-family: 'Dela Gothic One', cursive;
@@ -1706,6 +1708,11 @@ h3{
   padding: 5px;
   cursor: url(./static/pointer-min.webp), pointer !important;
 }
+.generate input:active{
+  background-color: #3D3B39;
+  color: #d9d9d9;
+}
+
 .option input{
   background-color: #d9d9d9;
   color: #3D3B39;
