@@ -3,7 +3,17 @@ import { Component } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
-function Pindetail() {
+function Pindetail(number) {
+  const one={name:"hellow"};
+  const two={name:"h"};
+  var t;
+  if(number ==1){
+    t=one;
+
+  }
+  else{
+    t=two;
+  }
   return (
     <motion.div className="pin-page">
     <motion.div initial={{ display: 'block', zIndex: 1000 }} animate={{
@@ -48,7 +58,7 @@ function Pindetail() {
       </div>
       <div className="pin-body">
       <div className="pin_detail_image"><img src={require("../static/pin1-min.webp")} alt="" /></div>
-      <div className="pin_description">this is ment to be the part for pin description</div>
+      <div className="pin_description">{t.name}</div>
       <div className="back_to_pin"><div className="back-pin"><Link to={"/home"}><img src={require("../static/back-min.webp")} alt="" /></Link></div>Go Back</div>
 
 

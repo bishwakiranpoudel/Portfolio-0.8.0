@@ -36,7 +36,7 @@ export default function AnimatedRoutes() {
             <Route path="/pin" element={<Pin />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/profileloader" element={<Profileloader/>} />
-            <Route path="/pindetail" element={<Pindetail/>} />
+            <Route path="/pindetail" element={<Pindetail />} />
            
 
             <Route path="/passwordgenerator" element={<PasswordGenerator/>}/>

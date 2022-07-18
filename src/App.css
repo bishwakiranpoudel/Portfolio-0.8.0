@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Creepster', cursive;
+  font-family: 'Averia Serif Libre', cursive;
 
 }
 button{
@@ -107,8 +108,12 @@ button path{
 }
 
 @media all and (max-width: 800px) {
+  body{
+    overflow-y: hidden;
+  }
   body .App {
     background-image: linear-gradient(to right, #93B075 50%, #3D3B39 50%);
+    overflow-y: hidden;
 
 
     /* background-color: #3D3B39; */
@@ -1657,13 +1662,55 @@ ellipse {
     width: 280px;
     
 }
+.tools-body{
+  font-family: 'Dela Gothic One', cursive;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.tools-body span{
+  font-family: 'Dela Gothic One', cursive;
+  color: #3D3B39 !important;
+  font-size: 10px;
+}
+.tools-body ul{
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  list-style: none;
+  color: #3D3B39 !important;
+  width: 100%;
+}
+.tools-body li{
+  padding: 5px;
+  margin: 5px;
+}
+
+.replacement{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #3D3B39;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+
+}
 .tools-body img{
+  width: 50px;
+  height: 50px;
+
+}
+/* .tools-body img{
   margin-left: 62px;
-    /* margin-right: auto; */
+    
     width: 280px;
     margin-top: 35px;
     
-}
+} */
 .cv{
   background-color: #3D3B39;
 

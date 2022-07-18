@@ -146,7 +146,46 @@ export default class Tools extends Component {
             </defs>
           </svg></div>
           <div className="tools-body">
-          <img src={require("../static/getout2-min.webp")} alt="" />
+            <ul>
+            <li>
+                <Link to="/canvas"><div className="tools-outer" >
+                  <div className="tools-page-box">
+                    <div className="tools-page-box"  >
+                      <div className="replacement"></div>
+                      {/* <img src={require("../static/works-icon-min.webp")} alt="" /> */}
+                    </div>
+                  </div>
+                  <p><span>Drawing App</span></p>
+
+                </div></Link>
+              </li>
+              <li>
+                <Link to="/qrgenerator"><div className="tools-outer" >
+                  <div className="tools-page-box">
+                    <div className="tools-page-box"  >
+                    <div className="replacement"></div>
+                      {/* <img src={require("../static/works-icon-min.webp")} alt="" /> */}
+                    </div>
+                  </div>
+                  <p><span>QR Generator</span></p>
+
+                </div></Link>
+              </li>
+              <li>
+                <Link to="/passwordgenerator"><div className="tools-outer" >
+                  <div className="tools-page-box">
+                    <div className="tools-page-box"  >
+                    <div className="replacement"></div>
+                      {/* <img src={require("../static/works-icon-min.webp")} alt="" /> */}
+                    </div>
+                  </div>
+                  <p><span>Password Generator</span></p>
+
+                </div></Link>
+              </li>
+            </ul>
+
+            {/* <img src={require("../static/getout2-min.webp")} alt="" /> */}
           </div>
         </motion.div>
       </motion.div>
