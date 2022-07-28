@@ -41,7 +41,7 @@ export function useOnDraw(onDraw){
         
         if('ontouchstart' in window ){
             
-            console.log("muji");
+            
             console.log(window.TouchEvent);
             console.log(window.MouseEvent);
             window.addEventListener('touchmove',mouseMoveListener);
@@ -49,7 +49,7 @@ export function useOnDraw(onDraw){
 
         }
         else{
-            console.log("lado");
+           
             window.addEventListener('mousemove',mouseMoveListener);
 
         }

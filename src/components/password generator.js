@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const PasswordGenerator = () => {
   const [password, setPassword] = useState('')
@@ -136,6 +137,7 @@ const PasswordGenerator = () => {
           </div>
         </div>
       </div>
+      <Link to={"/tools"}><div className="backfooter"><span>Give up and get your sorry ass out</span></div></Link>
     </div>
   )
 }

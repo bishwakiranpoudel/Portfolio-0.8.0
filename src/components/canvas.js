@@ -1,5 +1,6 @@
 import { useOnDraw } from "./hooks";
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 const Canvas=({
    
 })=>{
@@ -82,6 +83,8 @@ const Canvas=({
         ctx.beginPath();
         ctx.arc(start.x, start.y, 2, 0, 2 * Math.PI);
         ctx.fill();
+        
+        
 
     }
 
@@ -106,9 +109,11 @@ const Canvas=({
         
         ref={setCanvasRef}
         width={440}
-        height={640}
+        height={400}
         />
+        <Link to={"/tools"}><div className="backfooter"><span>Give up and get your sorry ass out</span></div></Link>
         </div>
+        
     )
 
 }
