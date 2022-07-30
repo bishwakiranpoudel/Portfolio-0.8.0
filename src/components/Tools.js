@@ -182,6 +182,16 @@ export default class Tools extends Component {
                   <p><span>Password Generator</span></p>
 
                 </div></Link>
+                <Link to="/clipboard"><div className="tools-outer" >
+                  <div className="tools-page-box">
+                    <div className="tools-page-box"  >
+                    <div className="replacement"></div>
+                      {/* <img src={require("../static/works-icon-min.webp")} alt="" /> */}
+                    </div>
+                  </div>
+                  <p><span>Online Clipboard</span></p>
+
+                </div></Link>
               </li>
             </ul>
 
