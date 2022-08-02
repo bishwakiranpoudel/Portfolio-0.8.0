@@ -37,13 +37,18 @@ function Clipboard() {
           setmessage(d.docs.map((doc) => ({ ...doc.data(), id:doc.id})));
 
     };
+    function sopy(){
+        var pw = document.getElementById("password");
+        
+        navigator.clipboard.writeText(pw.innerHTML);
+      }
 
 
   return (
     <div className='clipboard'>
         <h1>Online Clipboard</h1>
         {message.map((m)=>{
-            return <p key={m.id}>Your retrival code is {m.code}</p>
+            return <p key={m.id}>Your retrival code is <span id='password'>{m.code}</span><img onClick={ sopy } src={require("../static/clipboard.webp")} alt="" /></p>
         })
 
         }
