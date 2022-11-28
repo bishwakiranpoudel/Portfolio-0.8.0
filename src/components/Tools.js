@@ -158,6 +158,16 @@ export default class Tools extends Component {
                   <p><span>Drawing App</span></p>
 
                 </div></Link>
+                <a href="https://lostteachats.netlify.app"><div className="tools-outer" >
+                  <div className="tools-page-box">
+                    <div className="tools-page-box"  >
+                    <div className="replacement"></div>
+                      {/* <img src={require("../static/works-icon-min.webp")} alt="" /> */}
+                    </div>
+                  </div>
+                  <p><span>LostTea chats</span></p>
+
+                </div></a>
               </li>
               <li>
                 <Link to="/qrgenerator"><div className="tools-outer" >
