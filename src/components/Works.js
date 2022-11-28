@@ -70,7 +70,8 @@ export default class Works extends Component {
               <div class="divider"></div>
               <div class="unlike" id='like-btn2' onClick={this.myFunction2}><img src={require("../static/like-min.webp")} alt="" /></div>
               <div class="description-project">Co-Founded a software company based in Birtamode, Nepal and currently assuming the position of CTO and all the responsibilities it brings</div>
-              <div className="visit-box"><div class="visit-project">visit</div></div>
+              {/* <div className="visit-box"><div class="visit-project">visit</div></div> */}
+              <br />
             </div>
             <div class="work-cotainer">
               <div class="divider"></div>
@@ -80,7 +81,8 @@ export default class Works extends Component {
               <div class="divider"></div>
               <div class="unlike" id='like-btn1' onClick={this.myFunction}><img src={require("../static/like-min.webp")} alt="" /></div>
               <div class="description-project">E-commerce app comissioned to LinkBinary</div>
-              <div className="visit-box"><div class="visit-project">visit</div></div>
+              {/* <div className="visit-box"><div class="visit-project">visit</div></div> */}
+              <br />
             </div>
 
             <div class="work-cotainer">
@@ -91,7 +93,8 @@ export default class Works extends Component {
               <div class="divider"></div>
               <div class="unlike" id='like-btn3' onClick={this.myFunction3}><img src={require("../static/like-min.webp")} alt="" /></div>
               <div class="description-project">Clothing brand in the making</div>
-              <div className="visit-box"><div class="visit-project">visit</div></div>
+              {/* <div className="visit-box"><div class="visit-project">visit</div></div> */}
+              <br />
             </div>
             <div class="work-cotainer">
               <div class="divider"></div>
@@ -101,7 +104,8 @@ export default class Works extends Component {
               <div class="divider"></div>
               <div class="unlike" id='like-btn4' onClick={this.myFunction4}><img src={require("../static/like-min.webp")} alt="" /></div>
               <div class="description-project">A simple catelog site.</div>
-              <div className="visit-box"><div class="visit-project">visit</div></div>
+              {/* <div className="visit-box"><div class="visit-project">visit</div></div> */}
+              <br />
             </div>
             <div class="work-cotainer">
               <div class="divider"></div>
@@ -111,7 +115,8 @@ export default class Works extends Component {
               <div class="divider"></div>
               <div class="unlike" id='like-btn5' onClick={this.myFunction5}><img src={require("../static/like-min.webp")} alt="" /></div>
               <div class="description-project">Electronic Health record system.</div>
-              <div className="visit-box"><div class="visit-project">visit</div></div>
+              {/* <div className="visit-box"><div class="visit-project">visit</div></div> */}
+              <br />
             </div>
             <div class="work-cotainer">
               <div class="divider"></div>
@@ -121,7 +126,8 @@ export default class Works extends Component {
               <div class="divider"></div>
               <div class="unlike" id='like-btn6' onClick={this.myFunction6}><img src={require("../static/like-min.webp")} alt="" /></div>
               <div class="description-project">Human Reasource management Software.</div>
-              <div className="visit-box"><div class="visit-project">visit</div></div>
+              {/* <div className="visit-box"><div class="visit-project">visit</div></div> */}
+              <br />
             </div>
             <div class="work-cotainer">
               <div class="divider"></div>
@@ -131,7 +137,8 @@ export default class Works extends Component {
               <div class="divider"></div>
               <div class="unlike" id='like-btn7' onClick={this.myFunction7}><img src={require("../static/like-min.webp")} alt="" /></div>
               <div class="description-project">Inventory management software.</div>
-              <div className="visit-box"><div class="visit-project">visit</div></div>
+              {/* <div className="visit-box"><div class="visit-project">visit</div></div> */}
+              <br />
             </div>
             <div class="work-cotainer">
               <div class="divider"></div>
@@ -141,7 +148,8 @@ export default class Works extends Component {
               <div class="divider"></div>
               <div class="unlike" id='like-btn8' onClick={this.myFunction8}><img src={require("../static/like-min.webp")} alt="" /></div>
               <div class="description-project">Mid-Teir catelog site.</div> 
-              <div className="visit-box"><div class="visit-project">visit</div></div>
+              {/* <div className="visit-box"><div class="visit-project">visit</div></div> */}
+              <br />
             </div>
 
 
