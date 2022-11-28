@@ -15,9 +15,11 @@ Contact() {
       emailjs.sendForm('service_fskzm77', 'template_e2k2iqc', form.current, '8OWrzZIXn37y-q8u9')
         .then((result) => {
             console.log(result.text);
+
         }, (error) => {
             console.log(error.text);
         });
+        
     };
     return (
       <motion.div className="contact-page">
