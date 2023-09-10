@@ -77,7 +77,7 @@ export default class Works extends Component {
               <div class="divider"></div>
               <div class="name-project">Batuwa</div>
               <div class="divider"></div>
-              <div class="image-project"><img src={require("../static/bats-min.webp")} alt="" /></div>
+              <div class="image-project"><img src={require("../static/batuwa.png")} alt="" /></div>
               <div class="divider"></div>
               <div class="unlike" id='like-btn1' onClick={this.myFunction}><img src={require("../static/like-min.webp")} alt="" /></div>
               <div class="description-project">E-commerce app comissioned to LinkBinary</div>
