@@ -140,17 +140,7 @@ export default class Works extends Component {
               {/* <div className="visit-box"><div class="visit-project">visit</div></div> */}
               <br />
             </div>
-            <div class="work-cotainer">
-              <div class="divider"></div>
-              <div class="name-project">Euro Asia Human Reasource</div>
-              <div class="divider"></div>
-              <div class="image-project"><img src={require("../static/bg-min.webp")} alt="" /></div>
-              <div class="divider"></div>
-              <div class="unlike" id='like-btn8' onClick={this.myFunction8}><img src={require("../static/like-min.webp")} alt="" /></div>
-              <div class="description-project">Mid-Teir catelog site.</div> 
-              {/* <div className="visit-box"><div class="visit-project">visit</div></div> */}
-              <br />
-            </div>
+            
 
 
           </div></motion.div></motion.div>
