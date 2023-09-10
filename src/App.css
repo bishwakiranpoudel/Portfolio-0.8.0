@@ -4,6 +4,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
 
+
+@keyframes moveAnimation {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-7px);
+  }
+}
+
+@keyframes colorChange {
+  0%, 100% {
+    fill: black;
+  }
+  50% {
+    fill: #93B075;
+  }
+}
+
+#button2i0 svg path {
+  animation: moveAnimation 2s linear infinite, colorChange 2s linear infinite;
+}
+
+
+
+
 a{
   text-decoration: none;
   color: #3D3B39;
