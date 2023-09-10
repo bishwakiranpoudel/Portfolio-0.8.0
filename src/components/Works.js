@@ -109,23 +109,23 @@ export default class Works extends Component {
             </div>
             <div class="work-cotainer">
               <div class="divider"></div>
-              <div class="name-project">Binary EHR</div>
+              <div class="name-project">Revive Poshan</div>
               <div class="divider"></div>
-              <div class="image-project"><img src={require("../static/Linkbinary.webp")} alt="" /></div>
+              <div class="image-project"><img src={require("../static/reviveposhan.png")} alt="" /></div>
               <div class="divider"></div>
               <div class="unlike" id='like-btn5' onClick={this.myFunction5}><img src={require("../static/like-min.webp")} alt="" /></div>
-              <div class="description-project">Electronic Health record system.</div>
+              <div class="description-project">Surplus Food Management System created with the vision that no food ever goes to waste.</div>
               {/* <div className="visit-box"><div class="visit-project">visit</div></div> */}
               <br />
             </div>
             <div class="work-cotainer">
               <div class="divider"></div>
-              <div class="name-project">Binary HRM</div>
+              <div class="name-project">Smart Tailor</div>
               <div class="divider"></div>
-              <div class="image-project"><img src={require("../static/Linkbinary.webp")} alt="" /></div>
+              <div class="image-project"><img src={require("../static/smart.png")} alt="" /></div>
               <div class="divider"></div>
               <div class="unlike" id='like-btn6' onClick={this.myFunction6}><img src={require("../static/like-min.webp")} alt="" /></div>
-              <div class="description-project">Human Reasource management Software.</div>
+              <div class="description-project">A smart way to take measurements and get data for tailoring.</div>
               {/* <div className="visit-box"><div class="visit-project">visit</div></div> */}
               <br />
             </div>
